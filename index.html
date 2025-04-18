@@ -48,26 +48,123 @@
             <h2 class="card-title">Rectangle Area Calculator</h2>
             <p>Area = width x height </p>
             <div class="flex items-center gap-2 mt-2">
-              <input id="recangle-width" type="number" placeholder="width (w)" class="input input-bordered w-full" />
+              <input id="rectangle-width" type="number" placeholder="width (w)" class="input input-bordered w-full" />
               <span>cm</span>
             </div>
             <div class="flex items-center gap-2 mt-2">
-              <input id="recangle-height" type="number" placeholder="Height (h)" class="input input-bordered w-full" />
+              <input id="rectangle-height" type="number" placeholder="Height (h)" class="input input-bordered w-full" />
               <span>cm</span>
             </div>
   
               <div class="card-actions mt-4">
-                <button onclick="triangle_calc()" class="btn btn-primary w-full">Calculate</button>
+                <button onclick="rectangle_calc()" class="btn btn-primary w-full">Calculate</button>
               </div>
-              <p id="result" class="mt-2 text-success font-semibold">Area: <span id="triangle_result"></span><span>cm</span><sup>2</sup></p>
+              <p id="result" class="mt-2 text-success font-semibold">Area: <span id="rectangle-result"></span><span>cm</span><sup>2</sup></p>
            
           </div>
         </div>
+<!-- Card: Parallelogram -->
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img src="images/parallelogram.png" alt="Parallelogram" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Parallelogram Area Calculator</h2>
+    <p>Area = base × height</p>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="parallelogram-base" type="number" placeholder="base (b)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="parallelogram-height" type="number" placeholder="height (h)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="card-actions mt-4">
+      <button onclick="parallelogram_calc()" class="btn btn-primary w-full">Calculate</button>
+    </div>
+    <p id="result" class="mt-2 text-success font-semibold">
+      Area: <span id="parallelogram-result"></span><span>cm</span><sup>2</sup>
+    </p>
+  </div>
+</div>
+<!-- Card: Pentagon -->
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img src="images/pentagon.png" alt="Pentagon" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Pentagon Area Calculator</h2>
+    <p>Area = (5 × a²) / (4 × tan(π/5))</p>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="pentagon-side" type="number" placeholder="side (a)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="card-actions mt-4">
+      <button onclick="pentagon_calc()" class="btn btn-primary w-full">Calculate</button>
+    </div>
+    <p id="result" class="mt-2 text-success font-semibold">
+      Area: <span id="pentagon-result"></span><span>cm</span><sup>2</sup>
+    </p>
+  </div>
+</div>
+<!-- Card: Rhombus -->
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img src="images/rhombus.png" alt="Rhombus" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Rhombus Area Calculator</h2>
+    <p>Area = (d₁ × d₂) / 2</p>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="rhombus-d1" type="number" placeholder="Diagonal 1 (d₁)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="rhombus-d2" type="number" placeholder="Diagonal 2 (d₂)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="card-actions mt-4">
+      <button onclick="rhombus_calc()" class="btn btn-primary w-full">Calculate</button>
+    </div>
+    <p id="result" class="mt-2 text-success font-semibold">
+      Area: <span id="rhombus-result"></span><span>cm</span><sup>2</sup>
+    </p>
+  </div>
+</div>
+<!-- Card: Ellipse -->
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img src="images/ellipse.png" alt="Ellipse" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Ellipse Area Calculator</h2>
+    <p>Area = π × a × b</p>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="ellipse-a" type="number" placeholder="semi-major axis (a)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="flex items-center gap-2 mt-2">
+      <input id="ellipse-b" type="number" placeholder="semi-minor axis (b)" class="input input-bordered w-full" />
+      <span>cm</span>
+    </div>
+    <div class="card-actions mt-4">
+      <button onclick="ellipse_calc()" class="btn btn-primary w-full">Calculate</button>
+    </div>
+    <p id="result" class="mt-2 text-success font-semibold">
+      Area: <span id="ellipse-result"></span><span>cm</span><sup>2</sup>
+    </p>
+  </div>
+</div>
+
+
 
       </div>
+      <div></div>
     </div>
   </main>
 
   <script src="scripts/triangle.js"> </script>
+  <script src="scripts/rectangle.js"> </script>
+  
 </body>
 </html>
